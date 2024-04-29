@@ -1,0 +1,11 @@
+name: CI/CD EverGreen
+
+on:
+  push:
+    branches: ["dev","stg","main"]
+  workflow_dispatch:
+    inputs:
+      name:
+        description: 'Manual worlfloe dispatch'
+        required: true
+        default: 'Reason to run the workflow'
